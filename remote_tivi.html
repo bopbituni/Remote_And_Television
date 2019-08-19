@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RemoteTV</title>
+
+</head>
+<style>
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+
+    }
+
+    table {
+        margin: auto;
+        background-color: black;
+    }
+
+    button {
+        width: 40px;
+        height: 35px;
+        background-color: whitesmoke;
+    }
+
+    img {
+        width: 20px;
+        height: 25px;
+    }
+
+</style>
+
+<body>
+
+<div>
+    <table id="table" style="border: 2px solid black; border-radius: 25px;   padding: 10px;">
+        <tr>
+            <td>
+                <button type="button" onclick="tivi.boolen();"><img src="turn.png"></button>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="tivi.chuyenKenhTV(remote,1)">1</button>
+            </td>
+            <td>
+                <button type="button" onclick="tivi.chuyenKenhTV(remote,2)">2</button>
+            </td>
+            <td>
+                <button type="button" onclick="tivi.chuyenKenhTV(remote,3)">3</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="tivi.chuyenKenhTV(remote,4)">4</button>
+            </td>
+            <td>
+                <button type="button" onclick="tivi.chuyenKenhTV(remote,5)">5</button>
+            </td>
+            <td>
+                <button type="button" onclick="tivi.chuyenKenhTV(remote,6)">6</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="tivi.dieuKhienAmLuongTang(remote)">+</button>
+            </td>
+            <td>
+                <button type="button" onclick="tivi.dieuKhienAmLuongGiam(remote)">-</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="remote.js"></script>
+<script src="tivi.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
